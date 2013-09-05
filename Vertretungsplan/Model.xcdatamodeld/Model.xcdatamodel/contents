@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Nachrichten" representedClassName="Nachrichten" syncable="YES">
+        <attribute name="datum" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nachricht" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Vertretung" representedClassName="Vertretung" syncable="YES">
+        <attribute name="art" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="datum" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fachAlt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fachNeu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="klasse" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lehrerAlt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="raumAlt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="raumNeu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stunde" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vertreter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vertretungstext" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Vertretung" positionX="160" positionY="192" width="128" height="210"/>
+        <element name="Nachrichten" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>
