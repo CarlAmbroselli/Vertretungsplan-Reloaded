@@ -21,7 +21,6 @@
     if(self.vertretung){
         self.lehrerAltLabel.text = self.vertretung.lehrerAlt;
         self.fachAltLabel.text = self.vertretung.fachAlt;
-        self.raumAltLabel.text = self.vertretung.raumAlt;
         self.lehrerNeuLabel.text = self.vertretung.vertreter;
         self.fachNeuLabel.text = self.vertretung.fachNeu;
         self.raumNeuLabel.text = self.vertretung.raumNeu;

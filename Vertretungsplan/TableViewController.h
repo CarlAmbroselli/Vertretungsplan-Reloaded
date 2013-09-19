@@ -16,6 +16,7 @@
 @property (nonatomic, weak) id <MenuButtonDelegate> delegate;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) NSString *klasse;
+@property (strong, nonatomic) UIView *noChangesView;
 
 @end
 

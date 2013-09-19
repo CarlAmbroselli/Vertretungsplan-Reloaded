@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>937621B4-91B9-47DC-A7D0-209C3546867C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Vertretungsplan</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2553514D-009E-481C-A574-32947558B65A</key>
+		<string>https://github.com/CarlAmbroselli/Vertretungsplan-Reloaded.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Vertretungsplan.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2553514D-009E-481C-A574-32947558B65A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CarlAmbroselli/Vertretungsplan-Reloaded.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2553514D-009E-481C-A574-32947558B65A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2553514D-009E-481C-A574-32947558B65A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Vertretungsplan</string>
+		</dict>
+	</array>
+</dict>
+</plist>

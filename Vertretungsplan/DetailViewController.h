@@ -12,7 +12,6 @@
 @interface DetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *lehrerAltLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fachAltLabel;
-@property (weak, nonatomic) IBOutlet UILabel *raumAltLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lehrerNeuLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fachNeuLabel;
 @property (weak, nonatomic) IBOutlet UILabel *raumNeuLabel;

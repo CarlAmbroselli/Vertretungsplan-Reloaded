@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A3779ED17D6652F00619135 /* Nachrichten.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3779EC17D6652F00619135 /* Nachrichten.m */; };
 		6AA8B88717D6476E0000DFCE /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8B88617D6476E0000DFCE /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AA8B88917D6520A0000DFCE /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA8B88817D6520A0000DFCE /* btn.png */; };
 		6ABC46B617D5ECE400FC50A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABC46B517D5ECE400FC50A7 /* UIKit.framework */; };
@@ -27,7 +26,6 @@
 		6ABC46E917D5EF3400FC50A7 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC46E817D5EF3400FC50A7 /* CoreDataTableViewController.m */; };
 		6ABC46F417D5F12E00FC50A7 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC46F317D5F12E00FC50A7 /* LeftViewController.m */; };
 		6ABC46F517D5F49100FC50A7 /* JSSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC46EE17D5EFD800FC50A7 /* JSSlidingViewController.m */; };
-		6ABC46F817D5F5E100FC50A7 /* Vertretung.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC46F717D5F5E100FC50A7 /* Vertretung.m */; };
 		6ABC46FA17D5F60600FC50A7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABC46F917D5F60600FC50A7 /* CoreData.framework */; };
 		6ABC46FD17D5F63700FC50A7 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC46FC17D5F63700FC50A7 /* Database.m */; };
 		6ABC470117D5FFFB00FC50A7 /* separator in Resources */ = {isa = PBXBuildFile; fileRef = 6ABC46FE17D5FFFB00FC50A7 /* separator */; };
@@ -44,11 +42,11 @@
 		6AD0409A17D671EB006298DD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD0409917D671EB006298DD /* icon.png */; };
 		6AD0409C17D67208006298DD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD0409B17D67208006298DD /* icon.png */; };
 		6AD076D817D63E720068FE14 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD076D717D63E720068FE14 /* DetailViewController.m */; };
+		6AE1CD2317EB4B5D00BD9751 /* Vertretung.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2217EB4B5D00BD9751 /* Vertretung.m */; };
+		6AE1CD2617EB4B5E00BD9751 /* Nachrichten.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2517EB4B5E00BD9751 /* Nachrichten.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A3779EB17D6652F00619135 /* Nachrichten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nachrichten.h; sourceTree = "<group>"; };
-		6A3779EC17D6652F00619135 /* Nachrichten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nachrichten.m; sourceTree = "<group>"; };
 		6AA8B88517D6476E0000DFCE /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		6AA8B88617D6476E0000DFCE /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		6AA8B88817D6520A0000DFCE /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
@@ -80,8 +78,6 @@
 		6ABC46EE17D5EFD800FC50A7 /* JSSlidingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSSlidingViewController.m; sourceTree = "<group>"; };
 		6ABC46F217D5F12E00FC50A7 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		6ABC46F317D5F12E00FC50A7 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
-		6ABC46F617D5F5E100FC50A7 /* Vertretung.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertretung.h; sourceTree = "<group>"; };
-		6ABC46F717D5F5E100FC50A7 /* Vertretung.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertretung.m; sourceTree = "<group>"; };
 		6ABC46F917D5F60600FC50A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6ABC46FB17D5F63700FC50A7 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
 		6ABC46FC17D5F63700FC50A7 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
@@ -100,6 +96,10 @@
 		6AD0409B17D67208006298DD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		6AD076D617D63E720068FE14 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		6AD076D717D63E720068FE14 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6AE1CD2117EB4B5D00BD9751 /* Vertretung.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertretung.h; sourceTree = "<group>"; };
+		6AE1CD2217EB4B5D00BD9751 /* Vertretung.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertretung.m; sourceTree = "<group>"; };
+		6AE1CD2417EB4B5E00BD9751 /* Nachrichten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nachrichten.h; sourceTree = "<group>"; };
+		6AE1CD2517EB4B5E00BD9751 /* Nachrichten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nachrichten.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,10 +165,10 @@
 				6ABC46FC17D5F63700FC50A7 /* Database.m */,
 				6ABC46BC17D5ECE400FC50A7 /* Supporting Files */,
 				6ABC46E117D5EDD900FC50A7 /* Model.xcdatamodeld */,
-				6A3779EB17D6652F00619135 /* Nachrichten.h */,
-				6A3779EC17D6652F00619135 /* Nachrichten.m */,
-				6ABC46F617D5F5E100FC50A7 /* Vertretung.h */,
-				6ABC46F717D5F5E100FC50A7 /* Vertretung.m */,
+				6AE1CD2417EB4B5E00BD9751 /* Nachrichten.h */,
+				6AE1CD2517EB4B5E00BD9751 /* Nachrichten.m */,
+				6AE1CD2117EB4B5D00BD9751 /* Vertretung.h */,
+				6AE1CD2217EB4B5D00BD9751 /* Vertretung.m */,
 			);
 			path = Vertretungsplan;
 			sourceTree = "<group>";
@@ -252,6 +252,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = carlambroselli;
+				TargetAttributes = {
+					6ABC46B117D5ECE400FC50A7 = {
+						DevelopmentTeam = RMLR5WZDH2;
+					};
+				};
 			};
 			buildConfigurationList = 6ABC46AD17D5ECE400FC50A7 /* Build configuration list for PBXProject "Vertretungsplan" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -306,18 +311,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ABC46F517D5F49100FC50A7 /* JSSlidingViewController.m in Sources */,
+				6AE1CD2317EB4B5D00BD9751 /* Vertretung.m in Sources */,
 				6ABC46C217D5ECE400FC50A7 /* main.m in Sources */,
 				6ABC46C617D5ECE400FC50A7 /* AppDelegate.m in Sources */,
 				6ABC46DD17D5ED1800FC50A7 /* TableViewController.m in Sources */,
 				6ABC46E017D5ED8900FC50A7 /* Cell.m in Sources */,
 				6ABC46E317D5EDD900FC50A7 /* Model.xcdatamodeld in Sources */,
 				6ABC46E917D5EF3400FC50A7 /* CoreDataTableViewController.m in Sources */,
+				6AE1CD2617EB4B5E00BD9751 /* Nachrichten.m in Sources */,
 				6ABC46F417D5F12E00FC50A7 /* LeftViewController.m in Sources */,
-				6ABC46F817D5F5E100FC50A7 /* Vertretung.m in Sources */,
 				6ABC46FD17D5F63700FC50A7 /* Database.m in Sources */,
 				6AD076D817D63E720068FE14 /* DetailViewController.m in Sources */,
 				6AA8B88717D6476E0000DFCE /* GTMNSString+HTML.m in Sources */,
-				6A3779ED17D6652F00619135 /* Nachrichten.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,13 +419,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Carl Ambroselli (Z3Y4J99MUV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carl Ambroselli (Z3Y4J99MUV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vertretungsplan/Vertretungsplan-Prefix.pch";
 				INFOPLIST_FILE = "Vertretungsplan/Vertretungsplan-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "27FEAD93-E2C3-47C5-A6CE-9D1AB283127C";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "27FEAD93-E2C3-47C5-A6CE-9D1AB283127C";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -432,13 +437,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Carl Ambroselli (Z3Y4J99MUV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carl Ambroselli (Z3Y4J99MUV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vertretungsplan/Vertretungsplan-Prefix.pch";
 				INFOPLIST_FILE = "Vertretungsplan/Vertretungsplan-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "27FEAD93-E2C3-47C5-A6CE-9D1AB283127C";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "27FEAD93-E2C3-47C5-A6CE-9D1AB283127C";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

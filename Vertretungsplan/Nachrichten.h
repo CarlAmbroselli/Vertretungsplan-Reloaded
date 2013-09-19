@@ -2,7 +2,7 @@
 //  Nachrichten.h
 //  Vertretungsplan
 //
-//  Created by Carl Ambroselli on 03.09.13.
+//  Created by Carl Ambroselli on 19.09.13.
 //  Copyright (c) 2013 carlambroselli. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 @interface Nachrichten : NSManagedObject
 
-@property (nonatomic, retain) NSString * nachricht;
 @property (nonatomic, retain) NSDate * datum;
+@property (nonatomic, retain) NSString * nachricht;
 
 @end
