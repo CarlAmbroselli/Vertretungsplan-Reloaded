@@ -42,8 +42,22 @@
 		6AD0409A17D671EB006298DD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD0409917D671EB006298DD /* icon.png */; };
 		6AD0409C17D67208006298DD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD0409B17D67208006298DD /* icon.png */; };
 		6AD076D817D63E720068FE14 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD076D717D63E720068FE14 /* DetailViewController.m */; };
-		6AE1CD2317EB4B5D00BD9751 /* Vertretung.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2217EB4B5D00BD9751 /* Vertretung.m */; };
 		6AE1CD2617EB4B5E00BD9751 /* Nachrichten.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2517EB4B5E00BD9751 /* Nachrichten.m */; };
+		6AE1CD3417EB544400BD9751 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2917EB544400BD9751 /* Icon-72.png */; };
+		6AE1CD3517EB544400BD9751 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2A17EB544400BD9751 /* Icon-72@2x.png */; };
+		6AE1CD3617EB544400BD9751 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2B17EB544400BD9751 /* Icon-Small-50.png */; };
+		6AE1CD3717EB544400BD9751 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2C17EB544400BD9751 /* Icon-Small.png */; };
+		6AE1CD3817EB544400BD9751 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2D17EB544400BD9751 /* Icon-Small@2x.png */; };
+		6AE1CD3917EB544400BD9751 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2E17EB544400BD9751 /* Icon.png */; };
+		6AE1CD3A17EB544400BD9751 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD2F17EB544400BD9751 /* Icon@2x.png */; };
+		6AE1CD3B17EB544400BD9751 /* Icon@2x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD3017EB544400BD9751 /* Icon@2x@2x.png */; };
+		6AE1CD3C17EB544400BD9751 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD3117EB544400BD9751 /* iTunesArtwork */; };
+		6AE1CD3D17EB544400BD9751 /* Unbenannt-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD3217EB544400BD9751 /* Unbenannt-1.png */; };
+		6AE1CD3E17EB544400BD9751 /* Unbenannt-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD3317EB544400BD9751 /* Unbenannt-1@2x.png */; };
+		6AE1CD4017EB549F00BD9751 /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD3F17EB549F00BD9751 /* Icon120.png */; };
+		6AE1CD4217EB54F300BD9751 /* Icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD4117EB54F300BD9751 /* Icon80.png */; };
+		6AE1CD4517EB6D6B00BD9751 /* Vertretung.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1CD4417EB6D6B00BD9751 /* Vertretung.m */; };
+		6AE1CD4817EB6D7C00BD9751 /* Vertretung+costumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1CD4717EB6D7C00BD9751 /* Vertretung+costumHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,10 +110,25 @@
 		6AD0409B17D67208006298DD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		6AD076D617D63E720068FE14 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		6AD076D717D63E720068FE14 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		6AE1CD2117EB4B5D00BD9751 /* Vertretung.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertretung.h; sourceTree = "<group>"; };
-		6AE1CD2217EB4B5D00BD9751 /* Vertretung.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertretung.m; sourceTree = "<group>"; };
 		6AE1CD2417EB4B5E00BD9751 /* Nachrichten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nachrichten.h; sourceTree = "<group>"; };
 		6AE1CD2517EB4B5E00BD9751 /* Nachrichten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nachrichten.m; sourceTree = "<group>"; };
+		6AE1CD2917EB544400BD9751 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		6AE1CD2A17EB544400BD9751 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		6AE1CD2B17EB544400BD9751 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		6AE1CD2C17EB544400BD9751 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		6AE1CD2D17EB544400BD9751 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		6AE1CD2E17EB544400BD9751 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6AE1CD2F17EB544400BD9751 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		6AE1CD3017EB544400BD9751 /* Icon@2x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x@2x.png"; sourceTree = "<group>"; };
+		6AE1CD3117EB544400BD9751 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		6AE1CD3217EB544400BD9751 /* Unbenannt-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Unbenannt-1.png"; sourceTree = "<group>"; };
+		6AE1CD3317EB544400BD9751 /* Unbenannt-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Unbenannt-1@2x.png"; sourceTree = "<group>"; };
+		6AE1CD3F17EB549F00BD9751 /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = "<group>"; };
+		6AE1CD4117EB54F300BD9751 /* Icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon80.png; sourceTree = "<group>"; };
+		6AE1CD4317EB6D6B00BD9751 /* Vertretung.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertretung.h; sourceTree = "<group>"; };
+		6AE1CD4417EB6D6B00BD9751 /* Vertretung.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertretung.m; sourceTree = "<group>"; };
+		6AE1CD4617EB6D7C00BD9751 /* Vertretung+costumHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vertretung+costumHeader.h"; sourceTree = "<group>"; };
+		6AE1CD4717EB6D7C00BD9751 /* Vertretung+costumHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Vertretung+costumHeader.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,10 +194,12 @@
 				6ABC46FC17D5F63700FC50A7 /* Database.m */,
 				6ABC46BC17D5ECE400FC50A7 /* Supporting Files */,
 				6ABC46E117D5EDD900FC50A7 /* Model.xcdatamodeld */,
+				6AE1CD4317EB6D6B00BD9751 /* Vertretung.h */,
+				6AE1CD4417EB6D6B00BD9751 /* Vertretung.m */,
+				6AE1CD4617EB6D7C00BD9751 /* Vertretung+costumHeader.h */,
+				6AE1CD4717EB6D7C00BD9751 /* Vertretung+costumHeader.m */,
 				6AE1CD2417EB4B5E00BD9751 /* Nachrichten.h */,
 				6AE1CD2517EB4B5E00BD9751 /* Nachrichten.m */,
-				6AE1CD2117EB4B5D00BD9751 /* Vertretung.h */,
-				6AE1CD2217EB4B5D00BD9751 /* Vertretung.m */,
 			);
 			path = Vertretungsplan;
 			sourceTree = "<group>";
@@ -176,6 +207,7 @@
 		6ABC46BC17D5ECE400FC50A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6AE1CD2817EB544400BD9751 /* icons */,
 				6AA8B88817D6520A0000DFCE /* btn.png */,
 				6ABC46FE17D5FFFB00FC50A7 /* separator */,
 				6ABC46FF17D5FFFB00FC50A7 /* separator@2x */,
@@ -207,6 +239,26 @@
 				6ABC46EE17D5EFD800FC50A7 /* JSSlidingViewController.m */,
 			);
 			name = JSSlidingViewController;
+			sourceTree = "<group>";
+		};
+		6AE1CD2817EB544400BD9751 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				6AE1CD4117EB54F300BD9751 /* Icon80.png */,
+				6AE1CD3F17EB549F00BD9751 /* Icon120.png */,
+				6AE1CD2917EB544400BD9751 /* Icon-72.png */,
+				6AE1CD2A17EB544400BD9751 /* Icon-72@2x.png */,
+				6AE1CD2B17EB544400BD9751 /* Icon-Small-50.png */,
+				6AE1CD2C17EB544400BD9751 /* Icon-Small.png */,
+				6AE1CD2D17EB544400BD9751 /* Icon-Small@2x.png */,
+				6AE1CD2E17EB544400BD9751 /* Icon.png */,
+				6AE1CD2F17EB544400BD9751 /* Icon@2x.png */,
+				6AE1CD3017EB544400BD9751 /* Icon@2x@2x.png */,
+				6AE1CD3117EB544400BD9751 /* iTunesArtwork */,
+				6AE1CD3217EB544400BD9751 /* Unbenannt-1.png */,
+				6AE1CD3317EB544400BD9751 /* Unbenannt-1@2x.png */,
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 		6AF40ABA17D66EF600BF2719 /* Icons */ = {
@@ -282,13 +334,22 @@
 			files = (
 				6ABC46C017D5ECE400FC50A7 /* InfoPlist.strings in Resources */,
 				6ABC46C817D5ECE400FC50A7 /* Default.png in Resources */,
+				6AE1CD3617EB544400BD9751 /* Icon-Small-50.png in Resources */,
+				6AE1CD3E17EB544400BD9751 /* Unbenannt-1@2x.png in Resources */,
 				6ABC46CA17D5ECE400FC50A7 /* Default@2x.png in Resources */,
 				6ABC46CC17D5ECE400FC50A7 /* Default-568h@2x.png in Resources */,
+				6AE1CD4217EB54F300BD9751 /* Icon80.png in Resources */,
 				6ABC46CF17D5ECE400FC50A7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				6AE1CD3B17EB544400BD9751 /* Icon@2x@2x.png in Resources */,
+				6AE1CD3417EB544400BD9751 /* Icon-72.png in Resources */,
 				6ABC46D217D5ECE400FC50A7 /* MainStoryboard_iPad.storyboard in Resources */,
+				6AE1CD3717EB544400BD9751 /* Icon-Small.png in Resources */,
 				6ABC470117D5FFFB00FC50A7 /* separator in Resources */,
+				6AE1CD3A17EB544400BD9751 /* Icon@2x.png in Resources */,
 				6ABC470217D5FFFB00FC50A7 /* separator@2x in Resources */,
 				6ABC470317D5FFFB00FC50A7 /* accessory_disclosure.png in Resources */,
+				6AE1CD3C17EB544400BD9751 /* iTunesArtwork in Resources */,
+				6AE1CD3517EB544400BD9751 /* Icon-72@2x.png in Resources */,
 				6AA8B88917D6520A0000DFCE /* btn.png in Resources */,
 				6AD0409017D671A2006298DD /* Icon-Small.png in Resources */,
 				6AD0409117D671A2006298DD /* Icon-Small@2x.png in Resources */,
@@ -296,9 +357,13 @@
 				6AD0409317D671A2006298DD /* Icon-Small-50.png in Resources */,
 				6AD0409417D671A2006298DD /* Icon@2x.png in Resources */,
 				6AD0409517D671A2006298DD /* Icon-72.png in Resources */,
+				6AE1CD3917EB544400BD9751 /* Icon.png in Resources */,
 				6AD0409617D671A2006298DD /* Icon-72@2x.png in Resources */,
+				6AE1CD4017EB549F00BD9751 /* Icon120.png in Resources */,
 				6AD0409817D671E1006298DD /* Icon@2x.png in Resources */,
 				6AD0409A17D671EB006298DD /* icon.png in Resources */,
+				6AE1CD3D17EB544400BD9751 /* Unbenannt-1.png in Resources */,
+				6AE1CD3817EB544400BD9751 /* Icon-Small@2x.png in Resources */,
 				6AD0409C17D67208006298DD /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ABC46F517D5F49100FC50A7 /* JSSlidingViewController.m in Sources */,
-				6AE1CD2317EB4B5D00BD9751 /* Vertretung.m in Sources */,
+				6AE1CD4517EB6D6B00BD9751 /* Vertretung.m in Sources */,
 				6ABC46C217D5ECE400FC50A7 /* main.m in Sources */,
 				6ABC46C617D5ECE400FC50A7 /* AppDelegate.m in Sources */,
 				6ABC46DD17D5ED1800FC50A7 /* TableViewController.m in Sources */,
@@ -323,6 +388,7 @@
 				6ABC46FD17D5F63700FC50A7 /* Database.m in Sources */,
 				6AD076D817D63E720068FE14 /* DetailViewController.m in Sources */,
 				6AA8B88717D6476E0000DFCE /* GTMNSString+HTML.m in Sources */,
+				6AE1CD4817EB6D7C00BD9751 /* Vertretung+costumHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +483,6 @@
 		6ABC46D917D5ECE400FC50A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -435,7 +500,6 @@
 		6ABC46DA17D5ECE400FC50A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

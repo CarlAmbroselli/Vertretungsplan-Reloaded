@@ -27,26 +27,14 @@ bool isRefreshing = NO;
     _managedObjectContext = managedObjectContext;
     if(managedObjectContext) {
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Vertretung"];
-        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"stunde" ascending:YES], [NSSortDescriptor sortDescriptorWithKey:@"klasse" ascending:YES]];
+        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"datum" ascending:YES], [NSSortDescriptor sortDescriptorWithKey:@"stunde" ascending:YES], [NSSortDescriptor sortDescriptorWithKey:@"klasse" ascending:YES]];
         if(![self.klasse isEqualToString:@"komplett"]) request.predicate = [NSPredicate predicateWithFormat:@"klasse == %@ AND datum > %@", self.klasse, [NSDate dateWithTimeIntervalSinceNow:-60*60*24]];
         else request.predicate = [NSPredicate predicateWithFormat:@"TRUEPREDICATE"];
         
-        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:managedObjectContext sectionNameKeyPath:@"stunde" cacheName:nil];
+        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:managedObjectContext sectionNameKeyPath:@"header" cacheName:nil];
         
     }else {
         self.fetchedResultsController = nil;
-    }
-    
-    if([[self.fetchedResultsController sections] count] == 0){
-        [self.view addSubview:self.noChangesView];
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    }
-    else {
-        if (self.noChangesView) {
-            [self.noChangesView removeFromSuperview];
-            self.noChangesView = nil;
-        }
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
 }
 
@@ -98,6 +86,7 @@ bool isRefreshing = NO;
     _klasse = klasse;
     self.managedObjectContext = [[Database sharedInstance] managedObjectContext];
     if(klasse) self.title = [@"Vertretungen - " stringByAppendingString:klasse];
+    [self updateNoChangesView];
 }
 
 - (void)updateTableHeaderView{
@@ -110,6 +99,10 @@ bool isRefreshing = NO;
     if(error) NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
     else{
         headerText = ((Nachrichten *)[matches lastObject]).nachricht;
+        
+        if([matches lastObject] != [matches firstObject]){
+            headerText = [NSString stringWithFormat:@"Heute:\r%@\r\rMorgen:\r%@", ((Nachrichten *)[matches lastObject]).nachricht, ((Nachrichten *)[matches firstObject]).nachricht];
+        }
         
         if([matches count]>0){
             CGSize size = [headerText sizeWithFont:[UIFont fontWithName:@"AvenirNext-Medium" size:15.0] constrainedToSize:CGSizeMake(self.tableView.frame.size.width-20, 200000) lineBreakMode:NSLineBreakByWordWrapping];
@@ -129,17 +122,7 @@ bool isRefreshing = NO;
         }
     }
     
-    if([[self.fetchedResultsController sections] count] == 0){
-            [self.view addSubview:self.noChangesView];
-            self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        }
-    else {
-        if (self.noChangesView) {
-            [self.noChangesView removeFromSuperview];
-            self.noChangesView = nil;
-        }
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    }
+    //[self updateNoChangesView];
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
@@ -188,31 +171,16 @@ bool isRefreshing = NO;
     label.font = [UIFont fontWithName:@"Futura" size:12.0f];
     label.backgroundColor = [UIColor clearColor];
     [header addSubview:label];
-    header.backgroundColor = [UIColor colorWithRed:0.0/255 green:120.0/255 blue:197.0/255 alpha:0.1];
+    if ([label.text hasPrefix:@"Heute"])
+        header.backgroundColor = [UIColor colorWithRed:0.0/255 green:120.0/255 blue:197.0/255 alpha:0.4];
+    else
+        header.backgroundColor = [UIColor colorWithRed:0.0/255 green:120.0/255 blue:197.0/255 alpha:0.1];
     return header;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 25.f;
 }
-
-- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    int ret = [super tableView:tableView numberOfRowsInSection:section];
-    
-    if (ret == 0 && section == 0) {
-        [self.view addSubview:self.noChangesView];
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    }
-    else {
-        if (self.noChangesView) {
-            [self.noChangesView removeFromSuperview];
-            self.noChangesView = nil;
-        }
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    }
-    return ret;
-}
-
 
 #pragma mark - Table view delegate
 
@@ -271,6 +239,48 @@ bool isRefreshing = NO;
         
     }];
     
+    
+    if(![[self currentWeekday] isEqualToString:[self tomorrow]]){
+        
+        // Generate the URL
+        NSURL *tomorrowUrl = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"http://ong-untis-parser.herokuapp.com/%@.json", [self tomorrow]]];
+        
+        // Create the connection
+        NSURLRequest *tomorrowRequest = [[NSURLRequest alloc] initWithURL:tomorrowUrl];
+        
+        // Make an NSOperationQueue
+        NSOperationQueue *tomorrowQueue = [[NSOperationQueue alloc] init];
+        [queue setName:@"Substitute Fetch 2"];
+        
+        // Send an asyncronous request on the queue
+        [NSURLConnection sendAsynchronousRequest:tomorrowRequest queue:tomorrowQueue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+            
+            // If there was an error getting the data
+            if (error) {
+                
+                dispatch_async(dispatch_get_main_queue(), ^(void) {
+                    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+                });
+                return;
+            }
+            
+            // Decode the data
+            NSError *jsonError;
+            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+            
+            // If there was an error decoding the JSON
+            if (jsonError) {
+                
+                dispatch_async(dispatch_get_main_queue(), ^(void) {
+                    NSLog(@"Unresolved JSON error %@, %@", jsonError, [jsonError userInfo]);
+                });
+                return;
+            }
+            
+            [self fetchedData:responseDict];
+            
+        }];
+    }
 }
 
 - (void)fetchedData:(NSDictionary *)responseData {
@@ -315,12 +325,13 @@ bool isRefreshing = NO;
             [self updateTableHeaderView];
             [self.refreshControl endRefreshing];
             [[Database sharedInstance] saveContext];
+            [self updateNoChangesView];
         });
 }
 
 - (void) removeOldEntries{
     
-    dispatch_async(dispatch_get_main_queue(), ^(void) {
+    //dispatch_async(dispatch_get_main_queue(), ^(void) {
         NSFetchRequest * oldEntries = [[NSFetchRequest alloc] init];
         [oldEntries setEntity:[NSEntityDescription entityForName:@"Vertretung" inManagedObjectContext:self.managedObjectContext]];
         [oldEntries setIncludesPropertyValues:NO]; //only fetch the managedObjectID
@@ -353,7 +364,7 @@ bool isRefreshing = NO;
                 [self.managedObjectContext deleteObject:nachricht];
             }
         }
-    });
+    //});
     
 }
 
@@ -404,6 +415,43 @@ bool isRefreshing = NO;
     
     return klassen;
 }
+
+- (NSString *) tomorrow{
+    NSDate *today = [[NSDate alloc] init];
+    
+    /* Generate the URL */
+    
+    NSString *weekday = nil;
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *weekdayComponents =[gregorian components:NSWeekdayCalendarUnit fromDate:today];
+    NSInteger day = [weekdayComponents weekday];
+    switch (day) {
+        case 1: // Sunday
+        case 7: // Saturday
+            weekday = @"monday";
+            break;
+        case 2: // Monday
+            weekday = @"tuesday";
+            break;
+        case 3: //Tuesday
+            weekday = @"wednesday";
+            break;
+        case 4: //Wednesday
+            weekday = @"thursday";
+            break;
+        case 5: //Thursday
+            weekday = @"friday";
+            break;
+        case 6: //Friday
+            weekday = @"monday";
+            break;
+        default: //Erde geht unter
+            break;
+    }
+    
+    return weekday;
+}
+
 
 - (NSString *) currentWeekday{
     NSDate *today = [[NSDate alloc] init];
@@ -463,7 +511,7 @@ bool isRefreshing = NO;
 - (UIView *) noChangesView {
     if (_noChangesView == nil) {
         _noChangesView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
-        _noChangesView.center = CGPointMake(self.tableView.center.x, self.tableView.center.y-80);
+        _noChangesView.center = CGPointMake(self.tableView.center.x, self.tableView.center.y-30);
         _noChangesView.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
         _noChangesView.layer.cornerRadius = 10.f;
         _noChangesView.clipsToBounds = YES;
@@ -480,6 +528,22 @@ bool isRefreshing = NO;
     }
     
     return _noChangesView;
+}
+
+- (void) updateNoChangesView{
+    
+    if([[self.fetchedResultsController sections] count] == 0){
+        [self.view addSubview:self.noChangesView];
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    else {
+        if (self.noChangesView) {
+            [self.noChangesView removeFromSuperview];
+            self.noChangesView = nil;
+        }
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    }
+    
 }
 
 @end

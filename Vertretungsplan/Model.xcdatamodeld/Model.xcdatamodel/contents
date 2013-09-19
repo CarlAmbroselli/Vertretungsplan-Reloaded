@@ -9,6 +9,7 @@
         <attribute name="datum" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="fachAlt" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fachNeu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="header" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
         <attribute name="klasse" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lehrerAlt" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="raumNeu" optional="YES" attributeType="String" syncable="YES"/>

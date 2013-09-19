@@ -22,5 +22,6 @@
 @property (nonatomic, retain) NSString * stunde;
 @property (nonatomic, retain) NSString * vertreter;
 @property (nonatomic, retain) NSString * vertretungstext;
+@property (nonatomic, retain) NSString * header;
 
 @end

@@ -21,5 +21,6 @@
 @dynamic stunde;
 @dynamic vertreter;
 @dynamic vertretungstext;
+@dynamic header;
 
 @end
