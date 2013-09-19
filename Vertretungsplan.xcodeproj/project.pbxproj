@@ -58,6 +58,22 @@
 		6AE1CD4517EB6D6B00BD9751 /* Vertretung.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1CD4417EB6D6B00BD9751 /* Vertretung.m */; };
 		6AE1CD4817EB6D7C00BD9751 /* Vertretung+costumHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1CD4717EB6D7C00BD9751 /* Vertretung+costumHeader.m */; };
 		6AE1CD4C17EB727000BD9751 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD4A17EB727000BD9751 /* MainStoryboard_iPad.storyboard */; };
+		6AE1CD5517EB74EE00BD9751 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5417EB74EE00BD9751 /* Images.xcassets */; };
+		6AE1CD6517EB771700BD9751 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5617EB771700BD9751 /* 1.png */; };
+		6AE1CD6617EB771700BD9751 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5717EB771700BD9751 /* 2.png */; };
+		6AE1CD6717EB771700BD9751 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5817EB771700BD9751 /* 3.png */; };
+		6AE1CD6817EB771700BD9751 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5917EB771700BD9751 /* 4.png */; };
+		6AE1CD6917EB771700BD9751 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5A17EB771700BD9751 /* 5.png */; };
+		6AE1CD6A17EB771700BD9751 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5B17EB771700BD9751 /* 6.png */; };
+		6AE1CD6B17EB771700BD9751 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5C17EB771700BD9751 /* 7.png */; };
+		6AE1CD6C17EB771700BD9751 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5D17EB771700BD9751 /* 8.png */; };
+		6AE1CD6D17EB771700BD9751 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5E17EB771700BD9751 /* 9.png */; };
+		6AE1CD6E17EB771700BD9751 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD5F17EB771700BD9751 /* 10.png */; };
+		6AE1CD6F17EB771700BD9751 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD6017EB771700BD9751 /* 11.png */; };
+		6AE1CD7017EB771700BD9751 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD6117EB771700BD9751 /* 12.png */; };
+		6AE1CD7117EB771700BD9751 /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD6217EB771700BD9751 /* 13.png */; };
+		6AE1CD7217EB771700BD9751 /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD6317EB771700BD9751 /* 14.png */; };
+		6AE1CD7317EB771700BD9751 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1CD6417EB771700BD9751 /* 15.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +152,22 @@
 		6AE1CD5117EB747200BD9751 /* Icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon40.png; sourceTree = "<group>"; };
 		6AE1CD5217EB748700BD9751 /* Icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon29.png; sourceTree = "<group>"; };
 		6AE1CD5317EB749100BD9751 /* Icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon58.png; sourceTree = "<group>"; };
+		6AE1CD5417EB74EE00BD9751 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6AE1CD5617EB771700BD9751 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		6AE1CD5717EB771700BD9751 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		6AE1CD5817EB771700BD9751 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		6AE1CD5917EB771700BD9751 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		6AE1CD5A17EB771700BD9751 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		6AE1CD5B17EB771700BD9751 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		6AE1CD5C17EB771700BD9751 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		6AE1CD5D17EB771700BD9751 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		6AE1CD5E17EB771700BD9751 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		6AE1CD5F17EB771700BD9751 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		6AE1CD6017EB771700BD9751 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		6AE1CD6117EB771700BD9751 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		6AE1CD6217EB771700BD9751 /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		6AE1CD6317EB771700BD9751 /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		6AE1CD6417EB771700BD9751 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +236,7 @@
 				6AE1CD4717EB6D7C00BD9751 /* Vertretung+costumHeader.m */,
 				6AE1CD2417EB4B5E00BD9751 /* Nachrichten.h */,
 				6AE1CD2517EB4B5E00BD9751 /* Nachrichten.m */,
+				6AE1CD5417EB74EE00BD9751 /* Images.xcassets */,
 			);
 			path = Vertretungsplan;
 			sourceTree = "<group>";
@@ -248,6 +281,21 @@
 		6AE1CD2817EB544400BD9751 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				6AE1CD5617EB771700BD9751 /* 1.png */,
+				6AE1CD5717EB771700BD9751 /* 2.png */,
+				6AE1CD5817EB771700BD9751 /* 3.png */,
+				6AE1CD5917EB771700BD9751 /* 4.png */,
+				6AE1CD5A17EB771700BD9751 /* 5.png */,
+				6AE1CD5B17EB771700BD9751 /* 6.png */,
+				6AE1CD5C17EB771700BD9751 /* 7.png */,
+				6AE1CD5D17EB771700BD9751 /* 8.png */,
+				6AE1CD5E17EB771700BD9751 /* 9.png */,
+				6AE1CD5F17EB771700BD9751 /* 10.png */,
+				6AE1CD6017EB771700BD9751 /* 11.png */,
+				6AE1CD6117EB771700BD9751 /* 12.png */,
+				6AE1CD6217EB771700BD9751 /* 13.png */,
+				6AE1CD6317EB771700BD9751 /* 14.png */,
+				6AE1CD6417EB771700BD9751 /* 15.png */,
 				6AD0408917D671A2006298DD /* Icon-Small.png */,
 				6AD0408A17D671A2006298DD /* Icon-Small@2x.png */,
 				6AD0408B17D671A2006298DD /* Icon-Small-50@2x.png */,
@@ -342,23 +390,34 @@
 				6ABC46C817D5ECE400FC50A7 /* Default.png in Resources */,
 				6AE1CD3617EB544400BD9751 /* Icon-Small-50.png in Resources */,
 				6AE1CD3E17EB544400BD9751 /* Unbenannt-1@2x.png in Resources */,
+				6AE1CD7117EB771700BD9751 /* 13.png in Resources */,
 				6ABC46CA17D5ECE400FC50A7 /* Default@2x.png in Resources */,
 				6ABC46CC17D5ECE400FC50A7 /* Default-568h@2x.png in Resources */,
+				6AE1CD6C17EB771700BD9751 /* 8.png in Resources */,
+				6AE1CD6617EB771700BD9751 /* 2.png in Resources */,
 				6AE1CD4217EB54F300BD9751 /* Icon80.png in Resources */,
+				6AE1CD6B17EB771700BD9751 /* 7.png in Resources */,
 				6ABC46CF17D5ECE400FC50A7 /* MainStoryboard_iPhone.storyboard in Resources */,
 				6AE1CD3B17EB544400BD9751 /* Icon@2x@2x.png in Resources */,
 				6AE1CD3417EB544400BD9751 /* Icon-72.png in Resources */,
+				6AE1CD7317EB771700BD9751 /* 15.png in Resources */,
 				6AE1CD3717EB544400BD9751 /* Icon-Small.png in Resources */,
+				6AE1CD6E17EB771700BD9751 /* 10.png in Resources */,
+				6AE1CD5517EB74EE00BD9751 /* Images.xcassets in Resources */,
 				6ABC470117D5FFFB00FC50A7 /* separator in Resources */,
+				6AE1CD6A17EB771700BD9751 /* 6.png in Resources */,
 				6AE1CD3A17EB544400BD9751 /* Icon@2x.png in Resources */,
 				6ABC470217D5FFFB00FC50A7 /* separator@2x in Resources */,
 				6ABC470317D5FFFB00FC50A7 /* accessory_disclosure.png in Resources */,
 				6AE1CD3C17EB544400BD9751 /* iTunesArtwork in Resources */,
 				6AE1CD3517EB544400BD9751 /* Icon-72@2x.png in Resources */,
+				6AE1CD6717EB771700BD9751 /* 3.png in Resources */,
 				6AA8B88917D6520A0000DFCE /* btn.png in Resources */,
 				6AD0409017D671A2006298DD /* Icon-Small.png in Resources */,
+				6AE1CD6D17EB771700BD9751 /* 9.png in Resources */,
 				6AD0409117D671A2006298DD /* Icon-Small@2x.png in Resources */,
 				6AD0409217D671A2006298DD /* Icon-Small-50@2x.png in Resources */,
+				6AE1CD6917EB771700BD9751 /* 5.png in Resources */,
 				6AE1CD4C17EB727000BD9751 /* MainStoryboard_iPad.storyboard in Resources */,
 				6AD0409317D671A2006298DD /* Icon-Small-50.png in Resources */,
 				6AD0409417D671A2006298DD /* Icon@2x.png in Resources */,
@@ -367,10 +426,15 @@
 				6AD0409617D671A2006298DD /* Icon-72@2x.png in Resources */,
 				6AE1CD4017EB549F00BD9751 /* Icon120.png in Resources */,
 				6AD0409817D671E1006298DD /* Icon@2x.png in Resources */,
+				6AE1CD6817EB771700BD9751 /* 4.png in Resources */,
 				6AD0409A17D671EB006298DD /* icon.png in Resources */,
+				6AE1CD6F17EB771700BD9751 /* 11.png in Resources */,
 				6AE1CD3D17EB544400BD9751 /* Unbenannt-1.png in Resources */,
+				6AE1CD7017EB771700BD9751 /* 12.png in Resources */,
 				6AE1CD3817EB544400BD9751 /* Icon-Small@2x.png in Resources */,
 				6AD0409C17D67208006298DD /* icon.png in Resources */,
+				6AE1CD7217EB771700BD9751 /* 14.png in Resources */,
+				6AE1CD6517EB771700BD9751 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +553,7 @@
 		6ABC46D917D5ECE400FC50A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -507,6 +572,7 @@
 		6ABC46DA17D5ECE400FC50A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
